@@ -1,0 +1,19 @@
+{
+  "heros": [
+    {
+      "title": "SUPERMAN",
+      "description": "",
+      "id": 1
+    },
+    {
+      "title": "SPIDERMAN",
+      "description": "",
+      "id": 2
+    },
+    {
+      "title": "MANOLITO EL FUERTE",
+      "description": "",
+      "id": 3
+    }
+  ]
+}

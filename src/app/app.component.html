@@ -1,0 +1,24 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Heros App</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="heros" class="nav-link">{{ 'HOME' | translate }}</a>
+      </li>
+    </div>
+
+    <mat-form-field appearance="fill" class="change-language">
+      <mat-label>{{ "CHANGE_LANGUAGE" | translate }}</mat-label>
+      <mat-select [value]="languages[0].code">
+        <mat-option *ngFor="let lang of languages" [value]="lang.code" (click)="useLanguage(lang.code)">
+          {{ lang.name | translate }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </nav>
+
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

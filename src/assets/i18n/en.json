@@ -1,0 +1,22 @@
+{
+  "YES": "Yes",
+  "NO": "No",
+  "HOME": "Home",
+  "CHANGE_LANGUAGE": "Change language",
+  "CONFIRM_ON_DELETE": "Please confirm if you would like to delete this hero",
+  "UPDATE": "Update",
+  "ERROR_MIN_3_CHARS": "Title must be at least 3 characters long",
+  "ADD_HERO": "Add Hero",
+  "EDIT_HERO": "Edit Hero",
+  "ERROR_MAX_300_CHARS": "Description max length is 300 characters",
+  "TITLE": "Title",
+  "SUBMIT": "Submit",
+  "DESCRIPTION": "Description",
+  "SEARCH": "Search",
+  "SEARCH_PLACEHOLDER": "Search by title",
+  "HEROS_LIST": "Heros List",
+  "ACTION": "Actions",
+  "EDIT": "Edit",
+  "DELETE": "Delete",
+  "LOADING": "Loading..."
+}

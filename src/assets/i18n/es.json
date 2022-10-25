@@ -1,0 +1,23 @@
+{
+  "YES": "Si",
+  "NO": "No",
+  "HOME": "Hogar",
+  "CHANGE_LANGUAGE": "Cambiar idioma",
+  "CONFIRM_ON_DELETE": "Por favor, confirme si desea eliminar este héroe",
+  "UPDATE": "Actualizar",
+  "ERROR_MIN_3_CHARS": "El título debe tener al menos 3 caracteres",
+  "ADD_HERO": "Añadir Héroe",
+  "EDIT_HERO": "Editar Héroe",
+  "ERROR_MAX_300_CHARS": "La longitud máxima de la descripción es de 300 caracteres",
+  "TITLE": "Título",
+  "SUBMIT": "Enviar",
+  "DESCRIPTION": "Descripción",
+  "SEARCH": "Buscar",
+  "SEARCH_PLACEHOLDER": "Buscar por título",
+  "HEROS_LIST": "Lista de Héroes",
+  "ACTION": "Acciones",
+  "EDIT": "Editar",
+  "ADD": "Añadir",
+  "DELETE": "Eliminar",
+  "LOADING": "Cargando..."
+}
