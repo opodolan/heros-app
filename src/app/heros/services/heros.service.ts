@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, zip, map } from 'rxjs';
 import { Hero } from '../models/hero.model';
 
 const baseUrl = 'http://localhost:3004/heros';
@@ -32,7 +32,13 @@ export class HerosService {
     return this.http.delete(`${baseUrl}/${id}`);
   }
 
-  findByTitle(title: string): Observable<Hero[]> {
-    return this.http.get<Hero[]>(`${baseUrl}?title_like=${title}`);
+  findByTitle(text: string): Observable<Hero[]> {
+    let response1$ = this.http.get<Hero[]>(`${baseUrl}?id=${text}`);
+    let response2$ = this.http.get<Hero[]>(`${baseUrl}?title_like=${text}`);
+
+    return zip(response1$, response2$).pipe(
+      map(arr => {
+        return arr[0].concat(arr[1]);
+      }));
   }
 }
